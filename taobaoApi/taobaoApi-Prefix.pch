@@ -1,0 +1,25 @@
+//
+// Prefix header for all source files of the 'taobaoApi' target in the 'taobaoApi' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+
+    #define api_uid @"笑含人生cherrychen"
+
+    #define api_buyer_key @"21402318"
+    #define api_buyer_secret @"e8c4403cdd89616c00ed4179cbe26bda"
+
+    #define api_seller_key @"21614551"
+    #define api_seller_secret @"01a69a28bac53f324d2dee188357abd9"
+
+#endif

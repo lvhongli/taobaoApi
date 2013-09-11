@@ -1,15 +1,15 @@
 //
-//  UIPhotoGalleryViewController.m
+//  UITaobaoApiViewController.m
 //  PhotoGalleryExample
 //
 //  Created by Ethan Nguyen on 5/24/13.
 //
 //
 
-#import "UIPhotoGalleryViewController.h"
-#import "UIPhotoWebViewController.h"
+#import "UITaobaoApiViewController.h"
+#import "UITaobaoWebViewController.h"
 
-@interface UIPhotoGalleryViewController () {
+@interface UITaobaoApiViewController () {
     BOOL statusBarHidden;
     BOOL controlViewHidden;
     
@@ -27,7 +27,7 @@
 
 @end
 
-@implementation UIPhotoGalleryViewController
+@implementation UITaobaoApiViewController
 
 - (id)init {
     if (self = [super init]) {
@@ -170,7 +170,6 @@
     [topView removeFromSuperview];
     
     if (_dataSource && [_dataSource respondsToSelector:@selector(customTopViewForGalleryViewController:)]) {
-        topView = [_dataSource customTopViewForGalleryViewController:self];
         topView.frame = CGRectMake(0, 0, topView.frame.size.width, topView.frame.size.height);
         topView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth;
         [self.view addSubview:topView];
@@ -199,7 +198,6 @@
     [bottomView removeFromSuperview];
     
     if (_dataSource && [_dataSource respondsToSelector:@selector(customBottomViewForGalleryViewController:)]) {
-        bottomView = [_dataSource customBottomViewForGalleryViewController:self];
         bottomView.frame = CGRectMake(0, self.view.frame.size.height-bottomView.frame.size.height, bottomView.frame.size.width, bottomView.frame.size.height);
         [self.view addSubview:bottomView];
         return;
@@ -237,7 +235,7 @@
 }
 
 - (void)btnDetailPressed {
-    UIPhotoWebViewController *networkView = [[UIPhotoWebViewController alloc] init];
+    UITaobaoWebViewController *networkView = [[UITaobaoWebViewController alloc] init];
     networkView.networkUrl = self.networkUrl;
     [self presentViewController:networkView animated:YES completion:nil];
 }

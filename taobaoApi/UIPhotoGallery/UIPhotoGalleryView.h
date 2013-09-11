@@ -26,7 +26,7 @@ typedef enum UIPhotoGalleryDoubleTapHandlerEnum {
     UIPhotoGalleryDoubleTapHandlerCustom
 } UIPhotoGalleryDoubleTapHandler;
 
-@class UIPhotoGalleryView, UIPhotoGalleryViewController, UIPhotoCaptionView;
+@class UIPhotoGalleryView, UIPhotoCaptionView;
 
 @protocol UIPhotoGalleryDataSource <NSObject>
 
@@ -41,9 +41,6 @@ typedef enum UIPhotoGalleryDoubleTapHandlerEnum {
 - (NSString*)photoGallery:(UIPhotoGalleryView*)photoGallery plainTextCaptionAtIndex:(NSInteger)index;
 - (NSAttributedString*)photoGallery:(UIPhotoGalleryView*)photoGallery attributedTextCaptionAtIndex:(NSInteger)index;
 - (UIView*)photoGallery:(UIPhotoGalleryView*)photoGallery customViewCaptionAtIndex:(NSInteger)index;
-
-- (UIView*)customTopViewForGalleryViewController:(UIPhotoGalleryViewController*)galleryViewController;
-- (UIView*)customBottomViewForGalleryViewController:(UIPhotoGalleryViewController*)galleryViewController;
 
 @end
 

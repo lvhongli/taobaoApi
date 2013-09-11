@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "TopIOSClient.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "UIPhotoGalleryViewController.h"
+#import "UITaobaoApiViewController.h"
 
 @interface ViewController ()
 
@@ -187,7 +187,7 @@ static NSInteger pageSize = 50;
     NSString *pid = [data objectForKey:pidKey];
     NSArray *networkList = [self getProduct:pid];
     
-    UIPhotoGalleryViewController *networkGallery = [[UIPhotoGalleryViewController alloc] init];
+    UITaobaoApiViewController *networkGallery = [[UITaobaoApiViewController alloc] init];
     networkGallery.networkGalleryArray = networkList;
     networkGallery.networkUrl = [NSString stringWithFormat:@"http://spu.tmall.com/spu_detail.htm?spu_id=%@", pid];
     [self presentViewController:networkGallery animated:YES completion:nil];

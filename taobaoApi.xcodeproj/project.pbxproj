@@ -10,7 +10,7 @@
 		D220976617D878C900FD2492 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D220976417D878BE00FD2492 /* QuartzCore.framework */; };
 		D220976B17D8913C00FD2492 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D220976A17D8913C00FD2492 /* SDWebImage.framework */; };
 		D220976E17D8929E00FD2492 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D220976C17D8929300FD2492 /* ImageIO.framework */; };
-		D2225B9317D9C086001F291A /* UIPhotoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2225B9217D9C086001F291A /* UIPhotoWebViewController.m */; };
+		D2225B9317D9C086001F291A /* UITaobaoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2225B9217D9C086001F291A /* UITaobaoWebViewController.m */; };
 		D2484B0617D716BF00FC9691 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484B0517D716BF00FC9691 /* UIKit.framework */; };
 		D2484B0817D716BF00FC9691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484B0717D716BF00FC9691 /* Foundation.framework */; };
 		D2484B0A17D716BF00FC9691 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484B0917D716BF00FC9691 /* CoreGraphics.framework */; };
@@ -22,23 +22,34 @@
 		D2484B1C17D716BF00FC9691 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2484B1B17D716BF00FC9691 /* Default-568h@2x.png */; };
 		D2484B1F17D716BF00FC9691 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2484B1E17D716BF00FC9691 /* ViewController.m */; };
 		D2484B2217D716BF00FC9691 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2484B2017D716BF00FC9691 /* ViewController.xib */; };
-		D2484C3317D725DE00FC9691 /* libTOPIOSSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484C1617D725DE00FC9691 /* libTOPIOSSdk.a */; };
-		D2484C3417D725DE00FC9691 /* libTOPIOSSdk.s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484C1717D725DE00FC9691 /* libTOPIOSSdk.s.a */; };
 		D2484C3717D7260300FC9691 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484C3517D725F100FC9691 /* SystemConfiguration.framework */; };
 		D2484C3917D7261B00FC9691 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484C3817D7261B00FC9691 /* libz.dylib */; };
 		D2A6BBBD17D7438E001DD64C /* skype.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A6BBBC17D7438E001DD64C /* skype.png */; };
 		D2A6BBBF17D74395001DD64C /* skype@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A6BBBE17D74395001DD64C /* skype@2x.png */; };
 		D2A7604E17D8C09E008965ED /* UIPhotoGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A7604917D8C09E008965ED /* UIPhotoGalleryView.m */; };
-		D2A7604F17D8C09E008965ED /* UIPhotoGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A7604B17D8C09E008965ED /* UIPhotoGalleryViewController.m */; };
+		D2A7604F17D8C09E008965ED /* UITaobaoApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A7604B17D8C09E008965ED /* UITaobaoApiViewController.m */; };
 		D2A7605017D8C09E008965ED /* UIPhotoItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A7604D17D8C09E008965ED /* UIPhotoItemView.m */; };
+		D2DC78E117E04D530029F035 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC78CF17E04D530029F035 /* AFHTTPClient.m */; };
+		D2DC78E217E04D530029F035 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC78D117E04D530029F035 /* AFHTTPRequestOperation.m */; };
+		D2DC78E317E04D530029F035 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC78D317E04D530029F035 /* AFImageRequestOperation.m */; };
+		D2DC78E417E04D530029F035 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC78D517E04D530029F035 /* AFJSONRequestOperation.m */; };
+		D2DC78E517E04D530029F035 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC78D717E04D530029F035 /* AFNetworkActivityIndicatorManager.m */; };
+		D2DC78E617E04D530029F035 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC78DA17E04D530029F035 /* AFPropertyListRequestOperation.m */; };
+		D2DC78E717E04D530029F035 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC78DC17E04D530029F035 /* AFURLConnectionOperation.m */; };
+		D2DC78E817E04D530029F035 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC78DE17E04D530029F035 /* AFXMLRequestOperation.m */; };
+		D2DC78E917E04D530029F035 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC78E017E04D530029F035 /* UIImageView+AFNetworking.m */; };
+		D2DC78EC17E04E820029F035 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DC78EA17E04E760029F035 /* Security.framework */; };
+		D2DC78EF17E051750029F035 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DC78EE17E051750029F035 /* MobileCoreServices.framework */; };
+		D2DC796917E057570029F035 /* libTOPIOSSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DC794C17E057570029F035 /* libTOPIOSSdk.a */; };
+		D2DC796A17E057570029F035 /* libTOPIOSSdk.s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DC794D17E057570029F035 /* libTOPIOSSdk.s.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D220976417D878BE00FD2492 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D220976A17D8913C00FD2492 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		D220976C17D8929300FD2492 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		D2225B9117D9C086001F291A /* UIPhotoWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPhotoWebViewController.h; sourceTree = "<group>"; };
-		D2225B9217D9C086001F291A /* UIPhotoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoWebViewController.m; sourceTree = "<group>"; };
+		D2225B9117D9C086001F291A /* UITaobaoWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITaobaoWebViewController.h; path = UIPhotoGallery/UITaobaoWebViewController.h; sourceTree = "<group>"; };
+		D2225B9217D9C086001F291A /* UITaobaoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITaobaoWebViewController.m; path = UIPhotoGallery/UITaobaoWebViewController.m; sourceTree = "<group>"; };
 		D2484B0217D716BF00FC9691 /* taobaoApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taobaoApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2484B0517D716BF00FC9691 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2484B0717D716BF00FC9691 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,54 +66,75 @@
 		D2484B1D17D716BF00FC9691 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D2484B1E17D716BF00FC9691 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D2484B2117D716BF00FC9691 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		D2484C0D17D725DE00FC9691 /* DebuggingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggingTools.h; sourceTree = "<group>"; };
-		D2484C0E17D725DE00FC9691 /* JDY_ItemManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_ItemManagement.h; sourceTree = "<group>"; };
-		D2484C0F17D725DE00FC9691 /* JDY_MsgCenterManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_MsgCenterManagement.h; sourceTree = "<group>"; };
-		D2484C1017D725DE00FC9691 /* JDY_PlugInEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_PlugInEntry.h; sourceTree = "<group>"; };
-		D2484C1117D725DE00FC9691 /* JDY_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_Protocol.h; sourceTree = "<group>"; };
-		D2484C1217D725DE00FC9691 /* JDY_ProtocolConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_ProtocolConstants.h; sourceTree = "<group>"; };
-		D2484C1317D725DE00FC9691 /* JDY_TradeManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_TradeManagement.h; sourceTree = "<group>"; };
-		D2484C1417D725DE00FC9691 /* JDY_WangWangCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_WangWangCommunication.h; sourceTree = "<group>"; };
-		D2484C1517D725DE00FC9691 /* JDYSharedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDYSharedService.h; sourceTree = "<group>"; };
-		D2484C1617D725DE00FC9691 /* libTOPIOSSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTOPIOSSdk.a; sourceTree = "<group>"; };
-		D2484C1717D725DE00FC9691 /* libTOPIOSSdk.s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTOPIOSSdk.s.a; sourceTree = "<group>"; };
-		D2484C1817D725DE00FC9691 /* MacrosDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacrosDefine.h; sourceTree = "<group>"; };
-		D2484C1917D725DE00FC9691 /* TopApiResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopApiResponse.h; sourceTree = "<group>"; };
-		D2484C1A17D725DE00FC9691 /* TopAppConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppConnector.h; sourceTree = "<group>"; };
-		D2484C1B17D725DE00FC9691 /* TopAppEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppEntity.h; sourceTree = "<group>"; };
-		D2484C1C17D725DE00FC9691 /* TopAppEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppEvent.h; sourceTree = "<group>"; };
-		D2484C1D17D725DE00FC9691 /* TopAppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppService.h; sourceTree = "<group>"; };
-		D2484C1E17D725DE00FC9691 /* TopAppSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppSession.h; sourceTree = "<group>"; };
-		D2484C1F17D725DE00FC9691 /* TopAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAttachment.h; sourceTree = "<group>"; };
-		D2484C2017D725DE00FC9691 /* TopAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAuth.h; sourceTree = "<group>"; };
-		D2484C2117D725DE00FC9691 /* TopAuthCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAuthCallback.h; sourceTree = "<group>"; };
-		D2484C2217D725DE00FC9691 /* TopAuthWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAuthWebView.h; sourceTree = "<group>"; };
-		D2484C2317D725DE00FC9691 /* TopBridgeWebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBridgeWebview.h; sourceTree = "<group>"; };
-		D2484C2417D725DE00FC9691 /* TopConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopConstants.h; sourceTree = "<group>"; };
-		D2484C2517D725DE00FC9691 /* TopCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCrashHandler.h; sourceTree = "<group>"; };
-		D2484C2617D725DE00FC9691 /* TopEventCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopEventCallback.h; sourceTree = "<group>"; };
-		D2484C2717D725DE00FC9691 /* TopIOSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSClient.h; sourceTree = "<group>"; };
-		D2484C2817D725DE00FC9691 /* TopIOSSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSSdk.h; sourceTree = "<group>"; };
-		D2484C2917D725DE00FC9691 /* TopIOSSdkExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSSdkExt.h; sourceTree = "<group>"; };
-		D2484C2A17D725DE00FC9691 /* TopIOSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSUtil.h; sourceTree = "<group>"; };
-		D2484C2B17D725DE00FC9691 /* TopOpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopOpenUDID.h; sourceTree = "<group>"; };
-		D2484C2C17D725DE00FC9691 /* TopPluginServiceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPluginServiceType.h; sourceTree = "<group>"; };
-		D2484C2D17D725DE00FC9691 /* TopReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopReachability.h; sourceTree = "<group>"; };
-		D2484C2E17D725DE00FC9691 /* TopSDKBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSDKBundle.h; sourceTree = "<group>"; };
-		D2484C2F17D725DE00FC9691 /* TopServiceError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopServiceError.h; sourceTree = "<group>"; };
-		D2484C3017D725DE00FC9691 /* TopSimpleCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSimpleCache.h; sourceTree = "<group>"; };
-		D2484C3117D725DE00FC9691 /* TopToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopToolBar.h; sourceTree = "<group>"; };
-		D2484C3217D725DE00FC9691 /* TopTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTracker.h; sourceTree = "<group>"; };
 		D2484C3517D725F100FC9691 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D2484C3817D7261B00FC9691 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D2A6BBBC17D7438E001DD64C /* skype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skype.png; path = ../skype.png; sourceTree = "<group>"; };
 		D2A6BBBE17D74395001DD64C /* skype@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skype@2x.png"; path = "../skype@2x.png"; sourceTree = "<group>"; };
 		D2A7604817D8C09E008965ED /* UIPhotoGalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPhotoGalleryView.h; sourceTree = "<group>"; };
 		D2A7604917D8C09E008965ED /* UIPhotoGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoGalleryView.m; sourceTree = "<group>"; };
-		D2A7604A17D8C09E008965ED /* UIPhotoGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPhotoGalleryViewController.h; sourceTree = "<group>"; };
-		D2A7604B17D8C09E008965ED /* UIPhotoGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoGalleryViewController.m; sourceTree = "<group>"; };
+		D2A7604A17D8C09E008965ED /* UITaobaoApiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITaobaoApiViewController.h; path = UIPhotoGallery/UITaobaoApiViewController.h; sourceTree = "<group>"; };
+		D2A7604B17D8C09E008965ED /* UITaobaoApiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITaobaoApiViewController.m; path = UIPhotoGallery/UITaobaoApiViewController.m; sourceTree = "<group>"; };
 		D2A7604C17D8C09E008965ED /* UIPhotoItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPhotoItemView.h; sourceTree = "<group>"; };
 		D2A7604D17D8C09E008965ED /* UIPhotoItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoItemView.m; sourceTree = "<group>"; };
+		D2DC78CE17E04D530029F035 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		D2DC78CF17E04D530029F035 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		D2DC78D017E04D530029F035 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		D2DC78D117E04D530029F035 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		D2DC78D217E04D530029F035 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		D2DC78D317E04D530029F035 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		D2DC78D417E04D530029F035 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		D2DC78D517E04D530029F035 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		D2DC78D617E04D530029F035 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		D2DC78D717E04D530029F035 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		D2DC78D817E04D530029F035 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		D2DC78D917E04D530029F035 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		D2DC78DA17E04D530029F035 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		D2DC78DB17E04D530029F035 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		D2DC78DC17E04D530029F035 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		D2DC78DD17E04D530029F035 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		D2DC78DE17E04D530029F035 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		D2DC78DF17E04D530029F035 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		D2DC78E017E04D530029F035 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		D2DC78EA17E04E760029F035 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D2DC78EE17E051750029F035 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D2DC794317E057570029F035 /* DebuggingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggingTools.h; sourceTree = "<group>"; };
+		D2DC794417E057570029F035 /* JDY_ItemManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_ItemManagement.h; sourceTree = "<group>"; };
+		D2DC794517E057570029F035 /* JDY_MsgCenterManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_MsgCenterManagement.h; sourceTree = "<group>"; };
+		D2DC794617E057570029F035 /* JDY_PlugInEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_PlugInEntry.h; sourceTree = "<group>"; };
+		D2DC794717E057570029F035 /* JDY_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_Protocol.h; sourceTree = "<group>"; };
+		D2DC794817E057570029F035 /* JDY_ProtocolConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_ProtocolConstants.h; sourceTree = "<group>"; };
+		D2DC794917E057570029F035 /* JDY_TradeManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_TradeManagement.h; sourceTree = "<group>"; };
+		D2DC794A17E057570029F035 /* JDY_WangWangCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDY_WangWangCommunication.h; sourceTree = "<group>"; };
+		D2DC794B17E057570029F035 /* JDYSharedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDYSharedService.h; sourceTree = "<group>"; };
+		D2DC794C17E057570029F035 /* libTOPIOSSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTOPIOSSdk.a; sourceTree = "<group>"; };
+		D2DC794D17E057570029F035 /* libTOPIOSSdk.s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTOPIOSSdk.s.a; sourceTree = "<group>"; };
+		D2DC794E17E057570029F035 /* MacrosDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacrosDefine.h; sourceTree = "<group>"; };
+		D2DC794F17E057570029F035 /* TopApiResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopApiResponse.h; sourceTree = "<group>"; };
+		D2DC795017E057570029F035 /* TopAppConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppConnector.h; sourceTree = "<group>"; };
+		D2DC795117E057570029F035 /* TopAppEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppEntity.h; sourceTree = "<group>"; };
+		D2DC795217E057570029F035 /* TopAppEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppEvent.h; sourceTree = "<group>"; };
+		D2DC795317E057570029F035 /* TopAppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppService.h; sourceTree = "<group>"; };
+		D2DC795417E057570029F035 /* TopAppSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAppSession.h; sourceTree = "<group>"; };
+		D2DC795517E057570029F035 /* TopAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAttachment.h; sourceTree = "<group>"; };
+		D2DC795617E057570029F035 /* TopAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAuth.h; sourceTree = "<group>"; };
+		D2DC795717E057570029F035 /* TopAuthCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAuthCallback.h; sourceTree = "<group>"; };
+		D2DC795817E057570029F035 /* TopAuthWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAuthWebView.h; sourceTree = "<group>"; };
+		D2DC795917E057570029F035 /* TopBridgeWebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBridgeWebview.h; sourceTree = "<group>"; };
+		D2DC795A17E057570029F035 /* TopConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopConstants.h; sourceTree = "<group>"; };
+		D2DC795B17E057570029F035 /* TopCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCrashHandler.h; sourceTree = "<group>"; };
+		D2DC795C17E057570029F035 /* TopEventCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopEventCallback.h; sourceTree = "<group>"; };
+		D2DC795D17E057570029F035 /* TopIOSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSClient.h; sourceTree = "<group>"; };
+		D2DC795E17E057570029F035 /* TopIOSSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSSdk.h; sourceTree = "<group>"; };
+		D2DC795F17E057570029F035 /* TopIOSSdkExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSSdkExt.h; sourceTree = "<group>"; };
+		D2DC796017E057570029F035 /* TopIOSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopIOSUtil.h; sourceTree = "<group>"; };
+		D2DC796117E057570029F035 /* TopOpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopOpenUDID.h; sourceTree = "<group>"; };
+		D2DC796217E057570029F035 /* TopPluginServiceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPluginServiceType.h; sourceTree = "<group>"; };
+		D2DC796317E057570029F035 /* TopReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopReachability.h; sourceTree = "<group>"; };
+		D2DC796417E057570029F035 /* TopSDKBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSDKBundle.h; sourceTree = "<group>"; };
+		D2DC796517E057570029F035 /* TopServiceError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopServiceError.h; sourceTree = "<group>"; };
+		D2DC796617E057570029F035 /* TopSimpleCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSimpleCache.h; sourceTree = "<group>"; };
+		D2DC796717E057570029F035 /* TopToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopToolBar.h; sourceTree = "<group>"; };
+		D2DC796817E057570029F035 /* TopTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTracker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2DC78EF17E051750029F035 /* MobileCoreServices.framework in Frameworks */,
+				D2DC78EC17E04E820029F035 /* Security.framework in Frameworks */,
 				D220976E17D8929E00FD2492 /* ImageIO.framework in Frameworks */,
 				D220976617D878C900FD2492 /* QuartzCore.framework in Frameworks */,
 				D2484C3917D7261B00FC9691 /* libz.dylib in Frameworks */,
@@ -117,9 +151,9 @@
 				D2484B0617D716BF00FC9691 /* UIKit.framework in Frameworks */,
 				D2484B0817D716BF00FC9691 /* Foundation.framework in Frameworks */,
 				D2484B0A17D716BF00FC9691 /* CoreGraphics.framework in Frameworks */,
-				D2484C3317D725DE00FC9691 /* libTOPIOSSdk.a in Frameworks */,
-				D2484C3417D725DE00FC9691 /* libTOPIOSSdk.s.a in Frameworks */,
 				D220976B17D8913C00FD2492 /* SDWebImage.framework in Frameworks */,
+				D2DC796917E057570029F035 /* libTOPIOSSdk.a in Frameworks */,
+				D2DC796A17E057570029F035 /* libTOPIOSSdk.s.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +190,8 @@
 		D2484B0417D716BF00FC9691 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2DC78EE17E051750029F035 /* MobileCoreServices.framework */,
+				D2DC78EA17E04E760029F035 /* Security.framework */,
 				D220976C17D8929300FD2492 /* ImageIO.framework */,
 				D220976A17D8913C00FD2492 /* SDWebImage.framework */,
 				D220976417D878BE00FD2492 /* QuartzCore.framework */,
@@ -170,8 +206,10 @@
 		D2484B0B17D716BF00FC9691 /* taobaoApi */ = {
 			isa = PBXGroup;
 			children = (
+				D2DC794217E057570029F035 /* TaobaoApiHeader */,
+				D2DC78ED17E04FB10029F035 /* TaobaoProduct */,
+				D2DC78CD17E04D530029F035 /* AFNetworking */,
 				D2A7604717D8C09E008965ED /* UIPhotoGallery */,
-				D2484C0C17D725DE00FC9691 /* TaobaoApiHeader */,
 				D2484B1417D716BF00FC9691 /* AppDelegate.h */,
 				D2484B1517D716BF00FC9691 /* AppDelegate.m */,
 				D2484B1D17D716BF00FC9691 /* ViewController.h */,
@@ -197,65 +235,97 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D2484C0C17D725DE00FC9691 /* TaobaoApiHeader */ = {
-			isa = PBXGroup;
-			children = (
-				D2484C0D17D725DE00FC9691 /* DebuggingTools.h */,
-				D2484C0E17D725DE00FC9691 /* JDY_ItemManagement.h */,
-				D2484C0F17D725DE00FC9691 /* JDY_MsgCenterManagement.h */,
-				D2484C1017D725DE00FC9691 /* JDY_PlugInEntry.h */,
-				D2484C1117D725DE00FC9691 /* JDY_Protocol.h */,
-				D2484C1217D725DE00FC9691 /* JDY_ProtocolConstants.h */,
-				D2484C1317D725DE00FC9691 /* JDY_TradeManagement.h */,
-				D2484C1417D725DE00FC9691 /* JDY_WangWangCommunication.h */,
-				D2484C1517D725DE00FC9691 /* JDYSharedService.h */,
-				D2484C1617D725DE00FC9691 /* libTOPIOSSdk.a */,
-				D2484C1717D725DE00FC9691 /* libTOPIOSSdk.s.a */,
-				D2484C1817D725DE00FC9691 /* MacrosDefine.h */,
-				D2484C1917D725DE00FC9691 /* TopApiResponse.h */,
-				D2484C1A17D725DE00FC9691 /* TopAppConnector.h */,
-				D2484C1B17D725DE00FC9691 /* TopAppEntity.h */,
-				D2484C1C17D725DE00FC9691 /* TopAppEvent.h */,
-				D2484C1D17D725DE00FC9691 /* TopAppService.h */,
-				D2484C1E17D725DE00FC9691 /* TopAppSession.h */,
-				D2484C1F17D725DE00FC9691 /* TopAttachment.h */,
-				D2484C2017D725DE00FC9691 /* TopAuth.h */,
-				D2484C2117D725DE00FC9691 /* TopAuthCallback.h */,
-				D2484C2217D725DE00FC9691 /* TopAuthWebView.h */,
-				D2484C2317D725DE00FC9691 /* TopBridgeWebview.h */,
-				D2484C2417D725DE00FC9691 /* TopConstants.h */,
-				D2484C2517D725DE00FC9691 /* TopCrashHandler.h */,
-				D2484C2617D725DE00FC9691 /* TopEventCallback.h */,
-				D2484C2717D725DE00FC9691 /* TopIOSClient.h */,
-				D2484C2817D725DE00FC9691 /* TopIOSSdk.h */,
-				D2484C2917D725DE00FC9691 /* TopIOSSdkExt.h */,
-				D2484C2A17D725DE00FC9691 /* TopIOSUtil.h */,
-				D2484C2B17D725DE00FC9691 /* TopOpenUDID.h */,
-				D2484C2C17D725DE00FC9691 /* TopPluginServiceType.h */,
-				D2484C2D17D725DE00FC9691 /* TopReachability.h */,
-				D2484C2E17D725DE00FC9691 /* TopSDKBundle.h */,
-				D2484C2F17D725DE00FC9691 /* TopServiceError.h */,
-				D2484C3017D725DE00FC9691 /* TopSimpleCache.h */,
-				D2484C3117D725DE00FC9691 /* TopToolBar.h */,
-				D2484C3217D725DE00FC9691 /* TopTracker.h */,
-			);
-			name = TaobaoApiHeader;
-			path = Header;
-			sourceTree = "<group>";
-		};
 		D2A7604717D8C09E008965ED /* UIPhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
 				D2A7604817D8C09E008965ED /* UIPhotoGalleryView.h */,
 				D2A7604917D8C09E008965ED /* UIPhotoGalleryView.m */,
-				D2A7604A17D8C09E008965ED /* UIPhotoGalleryViewController.h */,
-				D2A7604B17D8C09E008965ED /* UIPhotoGalleryViewController.m */,
 				D2A7604C17D8C09E008965ED /* UIPhotoItemView.h */,
 				D2A7604D17D8C09E008965ED /* UIPhotoItemView.m */,
-				D2225B9117D9C086001F291A /* UIPhotoWebViewController.h */,
-				D2225B9217D9C086001F291A /* UIPhotoWebViewController.m */,
 			);
 			path = UIPhotoGallery;
+			sourceTree = "<group>";
+		};
+		D2DC78CD17E04D530029F035 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				D2DC78CE17E04D530029F035 /* AFHTTPClient.h */,
+				D2DC78CF17E04D530029F035 /* AFHTTPClient.m */,
+				D2DC78D017E04D530029F035 /* AFHTTPRequestOperation.h */,
+				D2DC78D117E04D530029F035 /* AFHTTPRequestOperation.m */,
+				D2DC78D217E04D530029F035 /* AFImageRequestOperation.h */,
+				D2DC78D317E04D530029F035 /* AFImageRequestOperation.m */,
+				D2DC78D417E04D530029F035 /* AFJSONRequestOperation.h */,
+				D2DC78D517E04D530029F035 /* AFJSONRequestOperation.m */,
+				D2DC78D617E04D530029F035 /* AFNetworkActivityIndicatorManager.h */,
+				D2DC78D717E04D530029F035 /* AFNetworkActivityIndicatorManager.m */,
+				D2DC78D817E04D530029F035 /* AFNetworking.h */,
+				D2DC78D917E04D530029F035 /* AFPropertyListRequestOperation.h */,
+				D2DC78DA17E04D530029F035 /* AFPropertyListRequestOperation.m */,
+				D2DC78DB17E04D530029F035 /* AFURLConnectionOperation.h */,
+				D2DC78DC17E04D530029F035 /* AFURLConnectionOperation.m */,
+				D2DC78DD17E04D530029F035 /* AFXMLRequestOperation.h */,
+				D2DC78DE17E04D530029F035 /* AFXMLRequestOperation.m */,
+				D2DC78DF17E04D530029F035 /* UIImageView+AFNetworking.h */,
+				D2DC78E017E04D530029F035 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		D2DC78ED17E04FB10029F035 /* TaobaoProduct */ = {
+			isa = PBXGroup;
+			children = (
+				D2225B9117D9C086001F291A /* UITaobaoWebViewController.h */,
+				D2225B9217D9C086001F291A /* UITaobaoWebViewController.m */,
+				D2A7604A17D8C09E008965ED /* UITaobaoApiViewController.h */,
+				D2A7604B17D8C09E008965ED /* UITaobaoApiViewController.m */,
+			);
+			name = TaobaoProduct;
+			sourceTree = "<group>";
+		};
+		D2DC794217E057570029F035 /* TaobaoApiHeader */ = {
+			isa = PBXGroup;
+			children = (
+				D2DC794317E057570029F035 /* DebuggingTools.h */,
+				D2DC794417E057570029F035 /* JDY_ItemManagement.h */,
+				D2DC794517E057570029F035 /* JDY_MsgCenterManagement.h */,
+				D2DC794617E057570029F035 /* JDY_PlugInEntry.h */,
+				D2DC794717E057570029F035 /* JDY_Protocol.h */,
+				D2DC794817E057570029F035 /* JDY_ProtocolConstants.h */,
+				D2DC794917E057570029F035 /* JDY_TradeManagement.h */,
+				D2DC794A17E057570029F035 /* JDY_WangWangCommunication.h */,
+				D2DC794B17E057570029F035 /* JDYSharedService.h */,
+				D2DC794C17E057570029F035 /* libTOPIOSSdk.a */,
+				D2DC794D17E057570029F035 /* libTOPIOSSdk.s.a */,
+				D2DC794E17E057570029F035 /* MacrosDefine.h */,
+				D2DC794F17E057570029F035 /* TopApiResponse.h */,
+				D2DC795017E057570029F035 /* TopAppConnector.h */,
+				D2DC795117E057570029F035 /* TopAppEntity.h */,
+				D2DC795217E057570029F035 /* TopAppEvent.h */,
+				D2DC795317E057570029F035 /* TopAppService.h */,
+				D2DC795417E057570029F035 /* TopAppSession.h */,
+				D2DC795517E057570029F035 /* TopAttachment.h */,
+				D2DC795617E057570029F035 /* TopAuth.h */,
+				D2DC795717E057570029F035 /* TopAuthCallback.h */,
+				D2DC795817E057570029F035 /* TopAuthWebView.h */,
+				D2DC795917E057570029F035 /* TopBridgeWebview.h */,
+				D2DC795A17E057570029F035 /* TopConstants.h */,
+				D2DC795B17E057570029F035 /* TopCrashHandler.h */,
+				D2DC795C17E057570029F035 /* TopEventCallback.h */,
+				D2DC795D17E057570029F035 /* TopIOSClient.h */,
+				D2DC795E17E057570029F035 /* TopIOSSdk.h */,
+				D2DC795F17E057570029F035 /* TopIOSSdkExt.h */,
+				D2DC796017E057570029F035 /* TopIOSUtil.h */,
+				D2DC796117E057570029F035 /* TopOpenUDID.h */,
+				D2DC796217E057570029F035 /* TopPluginServiceType.h */,
+				D2DC796317E057570029F035 /* TopReachability.h */,
+				D2DC796417E057570029F035 /* TopSDKBundle.h */,
+				D2DC796517E057570029F035 /* TopServiceError.h */,
+				D2DC796617E057570029F035 /* TopSimpleCache.h */,
+				D2DC796717E057570029F035 /* TopToolBar.h */,
+				D2DC796817E057570029F035 /* TopTracker.h */,
+			);
+			path = TaobaoApiHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,9 +400,18 @@
 				D2484B1617D716BF00FC9691 /* AppDelegate.m in Sources */,
 				D2484B1F17D716BF00FC9691 /* ViewController.m in Sources */,
 				D2A7604E17D8C09E008965ED /* UIPhotoGalleryView.m in Sources */,
-				D2A7604F17D8C09E008965ED /* UIPhotoGalleryViewController.m in Sources */,
+				D2A7604F17D8C09E008965ED /* UITaobaoApiViewController.m in Sources */,
 				D2A7605017D8C09E008965ED /* UIPhotoItemView.m in Sources */,
-				D2225B9317D9C086001F291A /* UIPhotoWebViewController.m in Sources */,
+				D2225B9317D9C086001F291A /* UITaobaoWebViewController.m in Sources */,
+				D2DC78E117E04D530029F035 /* AFHTTPClient.m in Sources */,
+				D2DC78E217E04D530029F035 /* AFHTTPRequestOperation.m in Sources */,
+				D2DC78E317E04D530029F035 /* AFImageRequestOperation.m in Sources */,
+				D2DC78E417E04D530029F035 /* AFJSONRequestOperation.m in Sources */,
+				D2DC78E517E04D530029F035 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				D2DC78E617E04D530029F035 /* AFPropertyListRequestOperation.m in Sources */,
+				D2DC78E717E04D530029F035 /* AFURLConnectionOperation.m in Sources */,
+				D2DC78E817E04D530029F035 /* AFXMLRequestOperation.m in Sources */,
+				D2DC78E917E04D530029F035 /* UIImageView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +499,6 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Downloads\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -429,7 +507,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/taobaoApi/Header\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/taobaoApi/TaobaoApiHeader\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +523,6 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Downloads\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -453,7 +531,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/taobaoApi/Header\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/taobaoApi/TaobaoApiHeader\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

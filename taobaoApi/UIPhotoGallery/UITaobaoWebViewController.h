@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIPhotoWebViewController : UIViewController<UIWebViewDelegate>
+@interface UITaobaoWebViewController : UIViewController<UIWebViewDelegate>
 
 @property (nonatomic, strong) NSString *networkUrl;
 

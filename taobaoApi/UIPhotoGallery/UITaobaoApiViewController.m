@@ -7,7 +7,7 @@
 //
 
 #import "UITaobaoApiViewController.h"
-#import "UITaobaoWebViewController.h"
+#import "UIWebViewController.h"
 
 @interface UITaobaoApiViewController () {
     BOOL statusBarHidden;
@@ -235,7 +235,7 @@
 }
 
 - (void)btnDetailPressed {
-    UITaobaoWebViewController *networkView = [[UITaobaoWebViewController alloc] init];
+    UIWebViewController *networkView = [[UIWebViewController alloc] init];
     networkView.networkUrl = self.networkUrl;
     [self presentViewController:networkView animated:YES completion:nil];
 }

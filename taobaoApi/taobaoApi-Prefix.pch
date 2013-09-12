@@ -12,15 +12,27 @@
 
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <QuartzCore/QuartzCore.h>
     #import <SystemConfiguration/SystemConfiguration.h>
     #import <MobileCoreServices/MobileCoreServices.h>
+    #import "AFNetworking.h"
 
-    #define api_uid @"笑含人生cherrychen"
+    #define api_taobao_uid @"笑含人生cherrychen"
 
-    #define api_buyer_key @"21402318"
-    #define api_buyer_secret @"e8c4403cdd89616c00ed4179cbe26bda"
+    #define api_taobao_buyer_key @"21402318"
+    #define api_taobao_buyer_secret @"e8c4403cdd89616c00ed4179cbe26bda"
 
-    #define api_seller_key @"21614551"
-    #define api_seller_secret @"01a69a28bac53f324d2dee188357abd9"
+    #define api_taobao_seller_key @"21614551"
+    #define api_taobao_seller_secret @"01a69a28bac53f324d2dee188357abd9"
+
+    #define api_youku_key @"fb00c35935672a17"
+    #define api_youku_secret @"3f810420ef3aea964f210fa6feb3ad3d"
+    #define api_youku_baseurl @"https://openapi.youku.com/"
+
+    #define UIColorFromRGBWithAlpha(rgbValue, a) \
+    [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+        green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+        blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 
 #endif

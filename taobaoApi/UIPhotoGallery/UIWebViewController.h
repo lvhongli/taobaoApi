@@ -1,5 +1,5 @@
 //
-//  UIPhotoWebViewController.h
+//  UIWebViewController.h
 //  taobaoApi
 //
 //  Created by zifeng on 13-9-6.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UITaobaoWebViewController : UIViewController<UIWebViewDelegate>
+@interface UIWebViewController : UIViewController<UIWebViewDelegate>
 
 @property (nonatomic, strong) NSString *networkUrl;
 

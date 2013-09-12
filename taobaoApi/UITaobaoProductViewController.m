@@ -1,21 +1,21 @@
 //
-//  ViewController.m
+//  UITaobaoProductViewController.m
 //  taobaoApi
 //
-//  Created by zifeng on 13-9-4.
+//  Created by zifeng on 13-9-11.
 //  Copyright (c) 2013年 zifeng. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "UITaobaoProductViewController.h"
 #import "TopIOSClient.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UITaobaoApiViewController.h"
 
-@interface ViewController ()
+@interface UITaobaoProductViewController ()
 
 @end
 
-@implementation ViewController
+@implementation UITaobaoProductViewController
 
 @synthesize tableView = _tableView;
 @synthesize tableList = _tableList;
@@ -30,6 +30,7 @@ static NSString *propImgsKey = @"product_prop_imgs";
 
 static float searchBarHeight = 44;
 static NSInteger pageSize = 50;
+static float cellHeight = 60;
 
 - (void)productSearch
 {
@@ -46,8 +47,8 @@ static NSInteger pageSize = 50;
         self.pageNo += 1;
     }
     
-    TopIOSClient *iosClient = [TopIOSClient getIOSClientByAppKey:api_seller_key];
-    [iosClient refreshTokenByUserId:api_uid];
+    TopIOSClient *iosClient = [TopIOSClient getIOSClientByAppKey:api_taobao_seller_key];
+    [iosClient refreshTokenByUserId:api_taobao_uid];
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setValue:@"taobao.products.search" forKey:@"method"];
@@ -55,11 +56,11 @@ static NSInteger pageSize = 50;
     [params setValue:searchKey forKey:@"q"];
     [params setValue:[NSString stringWithFormat:@"%i", pageSize] forKey:@"page_size"];
     [params setValue:[NSString stringWithFormat:@"%i", self.pageNo] forKey:@"page_no"];
-
-    TopApiResponse *response = [iosClient api:@"GET" params:params userId:api_uid];
+    
+    TopApiResponse *response = [iosClient api:@"GET" params:params userId:api_taobao_uid];
     
     if([response error]) {
-        NSLog(@"taobao.products.search api call result : %@",[response error]);
+        NSLog(@"taobao.products.search api call result : %@", [response error]);
     } else {
         NSData *jsonData = [[response content] dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *result = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
@@ -71,12 +72,17 @@ static NSInteger pageSize = 50;
     }
 }
 
+- (void)closeView
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 - (void)tableViewLoad
 {
     float viewWidth = self.view.frame.size.width;
     float viewHeight = self.view.frame.size.height;
     
-    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, viewWidth, searchBarHeight)];
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(searchBarHeight, 0, viewWidth - searchBarHeight, searchBarHeight)];
     self.searchBar.delegate = self;
     for(UIView *barView in self.searchBar.subviews) {
         if([barView isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
@@ -88,6 +94,18 @@ static NSInteger pageSize = 50;
         }
     }
     [self.view addSubview:self.searchBar];
+    
+    UILabel *backView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, searchBarHeight, searchBarHeight)];
+    backView.text = @"X";
+    backView.backgroundColor = [UIColor clearColor];
+    backView.textAlignment = UITextAlignmentCenter;
+    backView.font = [UIFont systemFontOfSize:24];
+    backView.textColor = UIColorFromRGBWithAlpha(0xC8C8C8, 1.0);
+    [self.view addSubview:backView];
+    
+    backView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *backViewTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeView)];
+    [backView addGestureRecognizer:backViewTap];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, searchBarHeight, viewWidth, viewHeight - searchBarHeight)];
     self.tableView.delegate = self;
@@ -135,31 +153,31 @@ static NSInteger pageSize = 50;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return cellHeight;
 }
 
 - (NSArray *)getProduct:(NSString *)productId
 {
     NSMutableArray *networkImgsList = [[NSMutableArray alloc] init];
     
-    TopIOSClient *iosClient = [TopIOSClient getIOSClientByAppKey:api_seller_key];
-    [iosClient refreshTokenByUserId:api_uid];
+    TopIOSClient *iosClient = [TopIOSClient getIOSClientByAppKey:api_taobao_seller_key];
+    [iosClient refreshTokenByUserId:api_taobao_uid];
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setValue:@"taobao.product.get" forKey:@"method"];
     [params setValue:[NSString stringWithFormat:@"%@,%@,%@", picKey, imgsKey, propImgsKey] forKey:@"fields"];
     [params setValue:productId forKey:@"product_id"];
     
-    TopApiResponse *response = [iosClient api:@"GET" params:params userId:api_uid];
+    TopApiResponse *response = [iosClient api:@"GET" params:params userId:api_taobao_uid];
     
     if([response error]) {
-        NSLog(@"taobao.product.get api call result : %@",[response error]);
+        NSLog(@"taobao.product.get api call result : %@", [response error]);
     } else {
         NSString *taobaoCdn = @"http://img01.taobaocdn.com/bao/uploaded/";
         
         NSData *jsonData = [[response content] dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *result = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
-
+        
         NSString *picUrl = [[[result objectForKey:@"product_get_response"] objectForKey:@"product"] objectForKey:@"pic_url"];
         
         if(picUrl != nil) {
@@ -176,7 +194,7 @@ static NSInteger pageSize = 50;
             [networkImgsList addObject: [NSString stringWithFormat:@"%@%@", taobaoCdn, [img objectForKey:@"url"]]];
         }
     }
-
+    
     return networkImgsList;
 }
 
@@ -222,11 +240,10 @@ static NSInteger pageSize = 50;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self tableViewLoad];
-    
     // register ios client
-    [TopIOSClient registerIOSClient:api_seller_key appSecret:api_seller_secret callbackUrl:@"appcallbackshopbaobei://" needAutoRefreshToken:TRUE];
+    [TopIOSClient registerIOSClient:api_taobao_seller_key appSecret:api_taobao_seller_secret callbackUrl:@"appcallbackshopbaobei://" needAutoRefreshToken:TRUE];
     
+    [self tableViewLoad];
     [self productSearch];
 }
 

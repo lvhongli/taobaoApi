@@ -10,7 +10,29 @@
 		D220976617D878C900FD2492 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D220976417D878BE00FD2492 /* QuartzCore.framework */; };
 		D220976B17D8913C00FD2492 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D220976A17D8913C00FD2492 /* SDWebImage.framework */; };
 		D220976E17D8929E00FD2492 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D220976C17D8929300FD2492 /* ImageIO.framework */; };
-		D2225B9317D9C086001F291A /* UITaobaoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2225B9217D9C086001F291A /* UITaobaoWebViewController.m */; };
+		D2225B9317D9C086001F291A /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2225B9217D9C086001F291A /* UIWebViewController.m */; };
+		D228ECE917E1A23C000BF466 /* UIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D228ECE717E1A23B000BF466 /* UIMainViewController.m */; };
+		D228ECEA17E1A23C000BF466 /* UIMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D228ECE817E1A23B000BF466 /* UIMainViewController.xib */; };
+		D228ECED17E1A28E000BF466 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECEB17E1A28E000BF466 /* loading.png */; };
+		D228ECEE17E1A28E000BF466 /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECEC17E1A28E000BF466 /* loading@2x.png */; };
+		D228ECF117E1AA33000BF466 /* taobao.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECEF17E1AA33000BF466 /* taobao.png */; };
+		D228ECF217E1AA33000BF466 /* taobao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECF017E1AA33000BF466 /* taobao@2x.png */; };
+		D228ECF517E1AA54000BF466 /* youku.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECF317E1AA53000BF466 /* youku.png */; };
+		D228ECF617E1AA54000BF466 /* youku@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECF417E1AA53000BF466 /* youku@2x.png */; };
+		D228ECF917E1AD8F000BF466 /* opr_add.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECF717E1AD8E000BF466 /* opr_add.png */; };
+		D228ECFA17E1AD8F000BF466 /* opr_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECF817E1AD8F000BF466 /* opr_add@2x.png */; };
+		D228ECFD17E1ADA1000BF466 /* opr_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECFB17E1ADA1000BF466 /* opr_clear.png */; };
+		D228ECFE17E1ADA1000BF466 /* opr_clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECFC17E1ADA1000BF466 /* opr_clear@2x.png */; };
+		D228ED0117E1ADA8000BF466 /* opr_download.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ECFF17E1ADA7000BF466 /* opr_download.png */; };
+		D228ED0217E1ADA8000BF466 /* opr_download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ED0017E1ADA8000BF466 /* opr_download@2x.png */; };
+		D228ED0517E1ADBA000BF466 /* opr_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ED0317E1ADBA000BF466 /* opr_refresh.png */; };
+		D228ED0617E1ADBA000BF466 /* opr_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ED0417E1ADBA000BF466 /* opr_refresh@2x.png */; };
+		D228ED0917E1ADC2000BF466 /* opr_set.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ED0717E1ADC1000BF466 /* opr_set.png */; };
+		D228ED0A17E1ADC2000BF466 /* opr_set@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ED0817E1ADC2000BF466 /* opr_set@2x.png */; };
+		D228ED0D17E1B0ED000BF466 /* building.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ED0B17E1B0EB000BF466 /* building.png */; };
+		D228ED0E17E1B0ED000BF466 /* building@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ED0C17E1B0EC000BF466 /* building@2x.png */; };
+		D228ED1517E1C9DA000BF466 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ED1317E1C9D8000BF466 /* back.png */; };
+		D228ED1617E1C9DA000BF466 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D228ED1417E1C9D9000BF466 /* back@2x.png */; };
 		D2484B0617D716BF00FC9691 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484B0517D716BF00FC9691 /* UIKit.framework */; };
 		D2484B0817D716BF00FC9691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484B0717D716BF00FC9691 /* Foundation.framework */; };
 		D2484B0A17D716BF00FC9691 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484B0917D716BF00FC9691 /* CoreGraphics.framework */; };
@@ -20,8 +42,6 @@
 		D2484B1817D716BF00FC9691 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D2484B1717D716BF00FC9691 /* Default.png */; };
 		D2484B1A17D716BF00FC9691 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2484B1917D716BF00FC9691 /* Default@2x.png */; };
 		D2484B1C17D716BF00FC9691 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2484B1B17D716BF00FC9691 /* Default-568h@2x.png */; };
-		D2484B1F17D716BF00FC9691 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2484B1E17D716BF00FC9691 /* ViewController.m */; };
-		D2484B2217D716BF00FC9691 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2484B2017D716BF00FC9691 /* ViewController.xib */; };
 		D2484C3717D7260300FC9691 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484C3517D725F100FC9691 /* SystemConfiguration.framework */; };
 		D2484C3917D7261B00FC9691 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2484C3817D7261B00FC9691 /* libz.dylib */; };
 		D2A6BBBD17D7438E001DD64C /* skype.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A6BBBC17D7438E001DD64C /* skype.png */; };
@@ -42,14 +62,42 @@
 		D2DC78EF17E051750029F035 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DC78EE17E051750029F035 /* MobileCoreServices.framework */; };
 		D2DC796917E057570029F035 /* libTOPIOSSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DC794C17E057570029F035 /* libTOPIOSSdk.a */; };
 		D2DC796A17E057570029F035 /* libTOPIOSSdk.s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DC794D17E057570029F035 /* libTOPIOSSdk.s.a */; };
+		D2DC797117E059750029F035 /* UITaobaoProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC796F17E059750029F035 /* UITaobaoProductViewController.m */; };
+		D2DC797217E059750029F035 /* UITaobaoProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DC797017E059750029F035 /* UITaobaoProductViewController.xib */; };
+		D2DC797C17E05D0C0029F035 /* UIYoukuSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC797A17E05D0C0029F035 /* UIYoukuSearchViewController.m */; };
+		D2DC797D17E05D0C0029F035 /* UIYoukuSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DC797B17E05D0C0029F035 /* UIYoukuSearchViewController.xib */; };
+		D2DC798017E078C70029F035 /* UIYoukuDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC797F17E078C70029F035 /* UIYoukuDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D220976417D878BE00FD2492 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D220976A17D8913C00FD2492 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		D220976C17D8929300FD2492 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		D2225B9117D9C086001F291A /* UITaobaoWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITaobaoWebViewController.h; path = UIPhotoGallery/UITaobaoWebViewController.h; sourceTree = "<group>"; };
-		D2225B9217D9C086001F291A /* UITaobaoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITaobaoWebViewController.m; path = UIPhotoGallery/UITaobaoWebViewController.m; sourceTree = "<group>"; };
+		D2225B9117D9C086001F291A /* UIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebViewController.h; path = UIPhotoGallery/UIWebViewController.h; sourceTree = "<group>"; };
+		D2225B9217D9C086001F291A /* UIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebViewController.m; path = UIPhotoGallery/UIWebViewController.m; sourceTree = "<group>"; };
+		D228ECE617E1A23B000BF466 /* UIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMainViewController.h; sourceTree = "<group>"; };
+		D228ECE717E1A23B000BF466 /* UIMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMainViewController.m; sourceTree = "<group>"; };
+		D228ECE817E1A23B000BF466 /* UIMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIMainViewController.xib; sourceTree = "<group>"; };
+		D228ECEB17E1A28E000BF466 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		D228ECEC17E1A28E000BF466 /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@2x.png"; sourceTree = "<group>"; };
+		D228ECEF17E1AA33000BF466 /* taobao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taobao.png; sourceTree = "<group>"; };
+		D228ECF017E1AA33000BF466 /* taobao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taobao@2x.png"; sourceTree = "<group>"; };
+		D228ECF317E1AA53000BF466 /* youku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youku.png; sourceTree = "<group>"; };
+		D228ECF417E1AA53000BF466 /* youku@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youku@2x.png"; sourceTree = "<group>"; };
+		D228ECF717E1AD8E000BF466 /* opr_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opr_add.png; sourceTree = "<group>"; };
+		D228ECF817E1AD8F000BF466 /* opr_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opr_add@2x.png"; sourceTree = "<group>"; };
+		D228ECFB17E1ADA1000BF466 /* opr_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opr_clear.png; sourceTree = "<group>"; };
+		D228ECFC17E1ADA1000BF466 /* opr_clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opr_clear@2x.png"; sourceTree = "<group>"; };
+		D228ECFF17E1ADA7000BF466 /* opr_download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opr_download.png; sourceTree = "<group>"; };
+		D228ED0017E1ADA8000BF466 /* opr_download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opr_download@2x.png"; sourceTree = "<group>"; };
+		D228ED0317E1ADBA000BF466 /* opr_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opr_refresh.png; sourceTree = "<group>"; };
+		D228ED0417E1ADBA000BF466 /* opr_refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opr_refresh@2x.png"; sourceTree = "<group>"; };
+		D228ED0717E1ADC1000BF466 /* opr_set.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opr_set.png; sourceTree = "<group>"; };
+		D228ED0817E1ADC2000BF466 /* opr_set@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opr_set@2x.png"; sourceTree = "<group>"; };
+		D228ED0B17E1B0EB000BF466 /* building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = building.png; sourceTree = "<group>"; };
+		D228ED0C17E1B0EC000BF466 /* building@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "building@2x.png"; sourceTree = "<group>"; };
+		D228ED1317E1C9D8000BF466 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		D228ED1417E1C9D9000BF466 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		D2484B0217D716BF00FC9691 /* taobaoApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taobaoApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2484B0517D716BF00FC9691 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2484B0717D716BF00FC9691 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,9 +111,6 @@
 		D2484B1717D716BF00FC9691 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D2484B1917D716BF00FC9691 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D2484B1B17D716BF00FC9691 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D2484B1D17D716BF00FC9691 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D2484B1E17D716BF00FC9691 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D2484B2117D716BF00FC9691 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		D2484C3517D725F100FC9691 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D2484C3817D7261B00FC9691 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D2A6BBBC17D7438E001DD64C /* skype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skype.png; path = ../skype.png; sourceTree = "<group>"; };
@@ -135,6 +180,14 @@
 		D2DC796617E057570029F035 /* TopSimpleCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSimpleCache.h; sourceTree = "<group>"; };
 		D2DC796717E057570029F035 /* TopToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopToolBar.h; sourceTree = "<group>"; };
 		D2DC796817E057570029F035 /* TopTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTracker.h; sourceTree = "<group>"; };
+		D2DC796E17E059750029F035 /* UITaobaoProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITaobaoProductViewController.h; sourceTree = "<group>"; };
+		D2DC796F17E059750029F035 /* UITaobaoProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITaobaoProductViewController.m; sourceTree = "<group>"; };
+		D2DC797017E059750029F035 /* UITaobaoProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITaobaoProductViewController.xib; sourceTree = "<group>"; };
+		D2DC797917E05D0C0029F035 /* UIYoukuSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIYoukuSearchViewController.h; sourceTree = "<group>"; };
+		D2DC797A17E05D0C0029F035 /* UIYoukuSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIYoukuSearchViewController.m; sourceTree = "<group>"; };
+		D2DC797B17E05D0C0029F035 /* UIYoukuSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIYoukuSearchViewController.xib; sourceTree = "<group>"; };
+		D2DC797E17E078C70029F035 /* UIYoukuDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIYoukuDictionary.h; sourceTree = "<group>"; };
+		D2DC797F17E078C70029F035 /* UIYoukuDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIYoukuDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,10 +216,39 @@
 		D220974D17D813D500FD2492 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D228ED1317E1C9D8000BF466 /* back.png */,
+				D228ED1417E1C9D9000BF466 /* back@2x.png */,
+				D228ECF717E1AD8E000BF466 /* opr_add.png */,
+				D228ECF817E1AD8F000BF466 /* opr_add@2x.png */,
+				D228ECFB17E1ADA1000BF466 /* opr_clear.png */,
+				D228ECFC17E1ADA1000BF466 /* opr_clear@2x.png */,
+				D228ECFF17E1ADA7000BF466 /* opr_download.png */,
+				D228ED0017E1ADA8000BF466 /* opr_download@2x.png */,
+				D228ED0317E1ADBA000BF466 /* opr_refresh.png */,
+				D228ED0417E1ADBA000BF466 /* opr_refresh@2x.png */,
+				D228ED0717E1ADC1000BF466 /* opr_set.png */,
+				D228ED0817E1ADC2000BF466 /* opr_set@2x.png */,
+				D228ECEF17E1AA33000BF466 /* taobao.png */,
+				D228ECF017E1AA33000BF466 /* taobao@2x.png */,
+				D228ECF317E1AA53000BF466 /* youku.png */,
+				D228ECF417E1AA53000BF466 /* youku@2x.png */,
+				D228ED0B17E1B0EB000BF466 /* building.png */,
+				D228ED0C17E1B0EC000BF466 /* building@2x.png */,
+				D228ECEB17E1A28E000BF466 /* loading.png */,
+				D228ECEC17E1A28E000BF466 /* loading@2x.png */,
 				D2A6BBBE17D74395001DD64C /* skype@2x.png */,
 				D2A6BBBC17D7438E001DD64C /* skype.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		D228EC5017E16A17000BF466 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D2225B9117D9C086001F291A /* UIWebViewController.h */,
+				D2225B9217D9C086001F291A /* UIWebViewController.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		D2484AF917D716BE00FC9691 = {
@@ -206,16 +288,18 @@
 		D2484B0B17D716BF00FC9691 /* taobaoApi */ = {
 			isa = PBXGroup;
 			children = (
-				D2DC794217E057570029F035 /* TaobaoApiHeader */,
-				D2DC78ED17E04FB10029F035 /* TaobaoProduct */,
 				D2DC78CD17E04D530029F035 /* AFNetworking */,
+				D2DC794217E057570029F035 /* TaobaoApiHeader */,
 				D2A7604717D8C09E008965ED /* UIPhotoGallery */,
+				D228EC5017E16A17000BF466 /* Common */,
+				D2DC78ED17E04FB10029F035 /* TaobaoProduct */,
+				D2DC797817E05BD10029F035 /* YoukuSearch */,
+				D2484B0C17D716BF00FC9691 /* Supporting Files */,
 				D2484B1417D716BF00FC9691 /* AppDelegate.h */,
 				D2484B1517D716BF00FC9691 /* AppDelegate.m */,
-				D2484B1D17D716BF00FC9691 /* ViewController.h */,
-				D2484B1E17D716BF00FC9691 /* ViewController.m */,
-				D2484B2017D716BF00FC9691 /* ViewController.xib */,
-				D2484B0C17D716BF00FC9691 /* Supporting Files */,
+				D228ECE617E1A23B000BF466 /* UIMainViewController.h */,
+				D228ECE717E1A23B000BF466 /* UIMainViewController.m */,
+				D228ECE817E1A23B000BF466 /* UIMainViewController.xib */,
 			);
 			path = taobaoApi;
 			sourceTree = "<group>";
@@ -275,10 +359,11 @@
 		D2DC78ED17E04FB10029F035 /* TaobaoProduct */ = {
 			isa = PBXGroup;
 			children = (
-				D2225B9117D9C086001F291A /* UITaobaoWebViewController.h */,
-				D2225B9217D9C086001F291A /* UITaobaoWebViewController.m */,
 				D2A7604A17D8C09E008965ED /* UITaobaoApiViewController.h */,
 				D2A7604B17D8C09E008965ED /* UITaobaoApiViewController.m */,
+				D2DC796E17E059750029F035 /* UITaobaoProductViewController.h */,
+				D2DC796F17E059750029F035 /* UITaobaoProductViewController.m */,
+				D2DC797017E059750029F035 /* UITaobaoProductViewController.xib */,
 			);
 			name = TaobaoProduct;
 			sourceTree = "<group>";
@@ -326,6 +411,18 @@
 				D2DC796817E057570029F035 /* TopTracker.h */,
 			);
 			path = TaobaoApiHeader;
+			sourceTree = "<group>";
+		};
+		D2DC797817E05BD10029F035 /* YoukuSearch */ = {
+			isa = PBXGroup;
+			children = (
+				D2DC797917E05D0C0029F035 /* UIYoukuSearchViewController.h */,
+				D2DC797A17E05D0C0029F035 /* UIYoukuSearchViewController.m */,
+				D2DC797B17E05D0C0029F035 /* UIYoukuSearchViewController.xib */,
+				D2DC797E17E078C70029F035 /* UIYoukuDictionary.h */,
+				D2DC797F17E078C70029F035 /* UIYoukuDictionary.m */,
+			);
+			name = YoukuSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,9 +480,31 @@
 				D2484B1817D716BF00FC9691 /* Default.png in Resources */,
 				D2484B1A17D716BF00FC9691 /* Default@2x.png in Resources */,
 				D2484B1C17D716BF00FC9691 /* Default-568h@2x.png in Resources */,
-				D2484B2217D716BF00FC9691 /* ViewController.xib in Resources */,
 				D2A6BBBD17D7438E001DD64C /* skype.png in Resources */,
 				D2A6BBBF17D74395001DD64C /* skype@2x.png in Resources */,
+				D2DC797217E059750029F035 /* UITaobaoProductViewController.xib in Resources */,
+				D2DC797D17E05D0C0029F035 /* UIYoukuSearchViewController.xib in Resources */,
+				D228ECEA17E1A23C000BF466 /* UIMainViewController.xib in Resources */,
+				D228ECED17E1A28E000BF466 /* loading.png in Resources */,
+				D228ECEE17E1A28E000BF466 /* loading@2x.png in Resources */,
+				D228ECF117E1AA33000BF466 /* taobao.png in Resources */,
+				D228ECF217E1AA33000BF466 /* taobao@2x.png in Resources */,
+				D228ECF517E1AA54000BF466 /* youku.png in Resources */,
+				D228ECF617E1AA54000BF466 /* youku@2x.png in Resources */,
+				D228ECF917E1AD8F000BF466 /* opr_add.png in Resources */,
+				D228ECFA17E1AD8F000BF466 /* opr_add@2x.png in Resources */,
+				D228ECFD17E1ADA1000BF466 /* opr_clear.png in Resources */,
+				D228ECFE17E1ADA1000BF466 /* opr_clear@2x.png in Resources */,
+				D228ED0117E1ADA8000BF466 /* opr_download.png in Resources */,
+				D228ED0217E1ADA8000BF466 /* opr_download@2x.png in Resources */,
+				D228ED0517E1ADBA000BF466 /* opr_refresh.png in Resources */,
+				D228ED0617E1ADBA000BF466 /* opr_refresh@2x.png in Resources */,
+				D228ED0917E1ADC2000BF466 /* opr_set.png in Resources */,
+				D228ED0A17E1ADC2000BF466 /* opr_set@2x.png in Resources */,
+				D228ED0D17E1B0ED000BF466 /* building.png in Resources */,
+				D228ED0E17E1B0ED000BF466 /* building@2x.png in Resources */,
+				D228ED1517E1C9DA000BF466 /* back.png in Resources */,
+				D228ED1617E1C9DA000BF466 /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,11 +517,10 @@
 			files = (
 				D2484B1217D716BF00FC9691 /* main.m in Sources */,
 				D2484B1617D716BF00FC9691 /* AppDelegate.m in Sources */,
-				D2484B1F17D716BF00FC9691 /* ViewController.m in Sources */,
 				D2A7604E17D8C09E008965ED /* UIPhotoGalleryView.m in Sources */,
 				D2A7604F17D8C09E008965ED /* UITaobaoApiViewController.m in Sources */,
 				D2A7605017D8C09E008965ED /* UIPhotoItemView.m in Sources */,
-				D2225B9317D9C086001F291A /* UITaobaoWebViewController.m in Sources */,
+				D2225B9317D9C086001F291A /* UIWebViewController.m in Sources */,
 				D2DC78E117E04D530029F035 /* AFHTTPClient.m in Sources */,
 				D2DC78E217E04D530029F035 /* AFHTTPRequestOperation.m in Sources */,
 				D2DC78E317E04D530029F035 /* AFImageRequestOperation.m in Sources */,
@@ -412,6 +530,10 @@
 				D2DC78E717E04D530029F035 /* AFURLConnectionOperation.m in Sources */,
 				D2DC78E817E04D530029F035 /* AFXMLRequestOperation.m in Sources */,
 				D2DC78E917E04D530029F035 /* UIImageView+AFNetworking.m in Sources */,
+				D2DC797117E059750029F035 /* UITaobaoProductViewController.m in Sources */,
+				D2DC797C17E05D0C0029F035 /* UIYoukuSearchViewController.m in Sources */,
+				D2DC798017E078C70029F035 /* UIYoukuDictionary.m in Sources */,
+				D228ECE917E1A23C000BF466 /* UIMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,14 +546,6 @@
 				D2484B0F17D716BF00FC9691 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D2484B2017D716BF00FC9691 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2484B2117D716BF00FC9691 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

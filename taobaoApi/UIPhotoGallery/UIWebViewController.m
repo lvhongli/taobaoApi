@@ -6,13 +6,13 @@
 //  Copyright (c) 2013年 zifeng. All rights reserved.
 //
 
-#import "UITaobaoWebViewController.h"
+#import "UIWebViewController.h"
 
-@interface UITaobaoWebViewController ()
+@interface UIWebViewController ()
 
 @end
 
-@implementation UITaobaoWebViewController
+@implementation UIWebViewController
 
 @synthesize networkUrl = _networkUrl;
 

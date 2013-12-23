@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1E9E9E3D-9F6A-4C6C-9549-AE2735674050</string>
+	<key>IDESourceControlProjectName</key>
+	<string>taobaoApi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1125564D-598F-42D7-B492-B88D2F0DCB75</key>
+		<string>https://github.com/lvhongli/taobaoApi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>taobaoApi.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1125564D-598F-42D7-B492-B88D2F0DCB75</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lvhongli/taobaoApi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1125564D-598F-42D7-B492-B88D2F0DCB75</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1125564D-598F-42D7-B492-B88D2F0DCB75</string>
+			<key>IDESourceControlWCCName</key>
+			<string>taobaoApi</string>
+		</dict>
+	</array>
+</dict>
+</plist>

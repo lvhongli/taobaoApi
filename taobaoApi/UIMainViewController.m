@@ -19,6 +19,7 @@
 static NSString *code_key = @"code";
 static NSString *code_key_taobao = @"taobao";
 static NSString *code_key_youku = @"youku";
+static NSString *code_key_alishuju = @"alishuju";
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,6 +44,10 @@ static NSString *code_key_youku = @"youku";
             initWithNibName:@"UIYoukuSearchViewController" bundle:nil];
         [self presentModalViewController:viewController animated:YES];
     }
+    
+    if([code isEqualToString:code_key_alishuju]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"com.taobao.idata.alishuju://"]];
+    }
 }
 
 - (void)viewDidLoad
@@ -61,7 +66,7 @@ static NSString *code_key_youku = @"youku";
     float buttonSpace = 60;
     float buttonInsetY = 160;
     
-    NSArray *dataArray = [[NSArray alloc] initWithObjects:code_key_taobao, code_key_youku, @"building", @"building", @"building", @"building", @"building", @"building", nil];
+    NSArray *dataArray = [[NSArray alloc] initWithObjects:code_key_taobao, code_key_youku, code_key_alishuju, @"building", @"building", @"building", @"building", @"building", nil];
     for (int i = 0; i < dataArray.count; i ++) {
         NSString *data = [dataArray objectAtIndex:i];
        
@@ -84,8 +89,13 @@ static NSString *code_key_youku = @"youku";
         titleLabel.textColor = [UIColor whiteColor];
         [dataView addSubview:titleLabel];
         
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", data]];
+        if(image == nil) {
+            image = [UIImage imageNamed:@"building.png"];
+        }
+        
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((labelSide - imageSide) / 2, titleHeight + labelSpace, imageSide, imageSide)];
-        [imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", data]]];
+        [imageView setImage:image];
         [dataView addSubview:imageView];
     }
     

@@ -36,7 +36,7 @@ static float cellHeight = 60;
 {
     NSString *searchKey = self.searchBar.text;
     if([searchKey length] == 0) {
-        NSString *defaultKey = @"nine west 鞋";
+        NSString *defaultKey = @"英国 代购";
         searchKey = defaultKey;
         self.searchBar.placeholder = defaultKey;
     }

@@ -26,6 +26,7 @@ static NSString *code_key_alishuju = @"alishuju";
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.screenName = @"主页面";
     }
     return self;
 }
@@ -35,13 +36,13 @@ static NSString *code_key_alishuju = @"alishuju";
     NSString *code = [sender.view.layer valueForKey:code_key];
     
     if([code isEqualToString:code_key_taobao]) {
-        UITaobaoProductViewController *viewController = [[UITaobaoProductViewController alloc] initWithNibName:@"UITaobaoProductViewController" bundle:nil];
+        UITaobaoProductViewController *viewController = [[UITaobaoProductViewController alloc] initWithNibName:@"UITaobaoProductViewController" bundle:nil title:code];
         [self presentModalViewController:viewController animated:YES];
     }
     
     if([code isEqualToString:code_key_youku]) {
         UIYoukuSearchViewController *viewController = [[UIYoukuSearchViewController alloc]
-            initWithNibName:@"UIYoukuSearchViewController" bundle:nil];
+            initWithNibName:@"UIYoukuSearchViewController" bundle:nil title:code];
         [self presentModalViewController:viewController animated:YES];
     }
     

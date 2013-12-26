@@ -9,6 +9,7 @@
 #import "UIYoukuSearchViewController.h"
 #import "UIYoukuDictionary.h"
 #import "UIWebViewController.h"
+#import "GoogleAnalyticsTools.h"
 
 @interface UIYoukuSearchViewController ()
 
@@ -23,6 +24,16 @@
 static float searchBarHeight = 44;
 static NSInteger pageSize = 50;
 static float cellHeight = 60;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil title:(NSString *)title
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+        self.screenName = title;
+    }
+    return self;
+}
 
 - (void)closeView
 {
@@ -147,16 +158,6 @@ static float cellHeight = 60;
     [self.tableView scrollToRowAtIndexPath:scrollIndexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)videoSearch
 {
     NSString *searchKey = self.searchBar.text;
@@ -165,6 +166,8 @@ static float cellHeight = 60;
         searchKey = defaultKey;
         self.searchBar.placeholder = defaultKey;
     }
+    
+    [GoogleAnalyticsTools updateSearchEvent:self.screenName searchKey:searchKey];
     
     if(self.pageNo == 0) {
         self.pageNo = 1;

@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface UITaobaoProductViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
+@interface UITaobaoProductViewController : GAITrackedViewController<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 @property(strong, nonatomic) UITableView *tableView;
 @property(strong, nonatomic) NSArray *tableList;
 @property(strong, nonatomic) UISearchBar *searchBar;
 @property(assign, nonatomic) NSInteger pageNo;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil title:(NSString *)title;
 
 @end

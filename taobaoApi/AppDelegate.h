@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITracker.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property(nonatomic, strong) id<GAITracker> tracker;
 
 @end

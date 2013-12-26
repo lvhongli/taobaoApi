@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface UIYoukuSearchViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
+@interface UIYoukuSearchViewController : GAITrackedViewController<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 @property(strong, nonatomic) UITableView *tableView;
 @property(strong, nonatomic) NSArray *tableList;
 @property(strong, nonatomic) UISearchBar *searchBar;
 @property(assign, nonatomic) NSInteger pageNo;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil title:(NSString *)title;
 
 @end

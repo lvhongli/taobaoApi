@@ -8,12 +8,21 @@
 
 #import "AppDelegate.h"
 #import "UIMainViewController.h"
+#import "GAI.h"
+
+static NSString *const kTrackingId = @"UA-46709165-2";
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [application setStatusBarHidden:NO];
+    
+    // google track
+    [GAI sharedInstance].dispatchInterval = 15;
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelError];
+    self.tracker = [[GAI sharedInstance] trackerWithName:@"taobaoApi" trackingId:kTrackingId];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
